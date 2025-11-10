@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Story Weaver - Collaborative Storytelling</title>
+    <link rel="stylesheet" href="story weaver .css" >  
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="main-title">🔥 Story Weaver</h1>
+            <p class="subtitle">Where tales come alive, one sentence at a time</p>
+        </header>
+
+        <!-- Story Context Box -->
+        <div class="story-context">
+            <h3>📖 Recent Story Context</h3>
+            <div id="storyContext">
+                <!-- Last 4 sentences will be displayed here -->
+            </div>
+        </div>
+
+        <!-- User Name Input -->
+        <div class="input-section">
+            <label class="input-label" for="userName">👤 Your name (optional):</label>
+            <input type="text" id="userName" class="text-input" placeholder="Enter your name..." maxlength="50">
+        </div>
+
+        <!-- Story Contribution Input -->
+        <div class="input-section">
+            <label class="input-label" for="userSentence">✨ Add your sentence to the story:</label>
+            <textarea id="userSentence" class="text-input" placeholder="Continue the story..." maxlength="200"></textarea>
+            <div id="charCounter" class="character-counter">0/200</div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-group">
+            <button class="btn btn-primary" id="submitBtn">WEAVE YOUR TALE</button>
+            <button class="btn btn-secondary" id="newStoryBtn">NEW STORY</button>
+        </div>
+
+        <!-- Story Timeline -->
+        <div class="timeline-section">
+            <h2 class="timeline-header">📜 Story Timeline</h2>
+            <div id="timeline" class="timeline">
+                <!-- Story contributions will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="story weaver.js" ></script>
+</body>
+</html>
